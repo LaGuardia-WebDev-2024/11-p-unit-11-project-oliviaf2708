@@ -20,9 +20,13 @@ li {
 }
 
 div {
-  border-radius: 15px;
   display: flex;
   justify-content: space-around;
+}
+
+img {
+  border-radius: 15px;
+  border-style: dotted;
   border-color: cadetblue;
 }
 
