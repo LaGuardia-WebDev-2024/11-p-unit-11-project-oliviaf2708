@@ -1,12 +1,12 @@
 <!-- Unit 11 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
+[ YES ] $() Select by Element, ID AND Class 
+[ YES ] Use Three Different jQuery Methods 
 [  ] Add Five CSS Declarations
 [ YES ] Include Three Images
 
 Select ONE Additional 
-[ no ] Feature 1 - Use .hide() & .show() method
+[ YES ] Feature 1 - Use .hide() & .show() method
 [ no ] Feature 2 - Use .addClass() method
 [ no ] Feature 3 - Use .slideDown() method
 [ no ] Feature 4 - Use .mouseover() method
@@ -29,6 +29,7 @@ Select ONE Additional
       <li>
         <h3 id="mem1">Vacation #1</h3>
         <p id="meminfo1">More about this memory.</p>
+        <div>
         <img
           src= "47.JPEG"
           alt= "photo of family"
@@ -46,13 +47,14 @@ Select ONE Additional
           alt= "photo of kayak"
           width="200"
           class="vaca1img3">
-
+          </div>
         
       </li>
 
       <li>
         <h3 id="mem2">Vacation #2</h3>
         <p id="meminfo2">More about this memory.</p>
+        <div>
         <img
           src= "IMG_9621.png"
           alt= "photo of bridge"
@@ -70,12 +72,31 @@ Select ONE Additional
           alt= "photo of friend"
           width="230"
           class="vaca2img3">
-
+          </div>
       </li>
 
       <li>
         <h3 id="mem3">Vacation #3</h3>
         <p id="meminfo3">More about this memory</p>
+        <div>
+        <img
+          src= "IMG_0769.jpeg"
+          alt= "photo of friends"
+          width="200"
+          class="vaca3img">
+
+        <img
+          src= "IMG_0025.jpeg"
+          alt= "photo of me"
+          width="200"
+          class="vaca3img2">
+
+        <img
+          src= "IMG_1904.jpeg"
+          alt= "photo of spain"
+          width="200"
+          class="vaca3img3">
+          </div>
       </li>
     </ol>
 
@@ -90,6 +111,7 @@ Select ONE Additional
         $("#mem1").css("color", "blue");
         $("#mem1").text("Blue Mountain Resort, Ontario Canada(2014)⛰️☀️");
         $("#meminfo1").text("I went to Blue mountain resort in the summer of 2014. It was the first ever real vacation I ever took, so I remember being super excited to go. They had super fun activities like water parks, mini golf, hiking, and a little village with shops and restaurants. I had so much fun on this trip!");
+        $("html").css("background-color", "yellow")
         $(".vaca1img").show(2000)
         $(".vaca1img2").show(3000)
         $(".vaca1img3").show(4000)
@@ -103,16 +125,24 @@ Select ONE Additional
         $("#mem2").css("color", "orange");
         $("#mem2").text("London & Paris(2018) 💂🏻‍♂️☕️🥐");
         $("#meminfo2").text("This was the first ever trip that I took to Europe. The plane ride was long but the views were so worth it. In London I got to see Buckingham Palace, Big Ben(although it was under construction) and went to the Harry Potter Museum. After a short train ride to Paris, I met up with one of my best frineds and we went around the city together. We walked the streets of Le Marais, toured the Seine and the Eiffel Tower, and so many other amazing activities. This will always be one of my most memorable trips.");
+        $("html").css("background-color", "red")
         $(".vaca2img").show(2000)
         $(".vaca2img2").show(3000)
         $(".vaca2img3").show(4000)
       });
 
+       $(".vaca3img").hide()
+       $(".vaca3img2").hide()
+       $(".vaca3img3").hide()
       // ======================== Button #3
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "purple");
         $("#mem3").text("London & Spain(2024) ☎️🌊🥘");
         $("#meminfo3").text("I took this vacation the summer after my sophmore year. I was able to meet up with my cousin and my aunt in London before we attended the Eras Tour at Wembley Stadium. We went around the city, ate at some delicios restaurants, and went on the London Eye. In Spain my family went to Valencia, where I was able to see one of my friends and her father who had moved there. My cousin, aunts, uncles, and one of my best friends were able to join us as well. We toured around the city, shopped, and celebrated my mothers 50th birthday! After, me and my parents spent a few days in Madrid. The food was amazing and the sights were beautiful. This was definitely one of my most fun vacations.");
+        $("html").css("background-color", "pink")
+        $(".vaca3img").show(2000)
+        $(".vaca3img2").show(3000)
+        $(".vaca3img3").show(4000)
       });
 
 

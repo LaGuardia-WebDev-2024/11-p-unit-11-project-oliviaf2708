@@ -10,3 +10,21 @@ html {
 h1 {
   font-family: "Poetsen One", sans-serif;
 }
+
+li {
+  background-color: azure;
+  width: 100%;
+  height: fit-content;
+  padding: 20px;
+  
+}
+
+div {
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  border-color: cadetblue;
+}
+
+
+
